@@ -1,11 +1,12 @@
 #include <iostream>
+#include "existence.h"
 using namespace std;
 
 int main() {
     cout << "Enter triangle sides:" << endl;
     double a, b, c;
     cin >> a >> b >> c;
-    bool exists = false;
+    bool exists = triangle_exists(a, b, c);
     string triangle_type = "";
     double p = 0;
     double s = 0;
